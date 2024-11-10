@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u2GBFYKRS+5WAyFiYjgebmqL0kZ0gWsJRlYUB+4rmxCWcHTOULIIEixgzjagtBjJbAkMOdxYsuuTMXbCKBpt0g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\isit.intern\\Documents\\MAISARAH\\C#\\CSVFileReader\\CSVFileReader\\CSVFileReader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isit.intern\\.nuget\\packages\\csvhelper\\32.0.3\\csvhelper.32.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,75 @@
+﻿@model List<CsvData>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload CSV</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" asp-controller="Csv" asp-action="UploadCsv">
+        <input type="file" name="file" />
+        <button type="submit">Upload</button>
+    </form>
+    <br />
+    @if (Model != null && Model.Count > 0)
+    {
+        <table border="1">
+            <tr>
+                <th>Company</th>
+                <th>CE Created</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Project</th>
+                <th>Quo Number</th>
+                <th>Quo Title</th>
+                <th>Item/Service Code</th>
+                <th>Item/Service</th>
+                <th>Description</th>
+                <th>Sub Brand Code</th>
+                <th>Sub Brand</th>
+                <th>Agent Code</th>
+                <th>Agent</th>
+                <th>Customer Code</th>
+                <th>Customer</th>
+                <th>Detailing/Sampling Day</th>
+                <th>Quantity</th>
+                <th>Total Quantity</th>
+                <th>Rate/Unit (RM)</th>
+                <th>Price</th>
+                <th>SST</th>
+                <th>Total</th>
+                <th>Tax Code</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Company</td>
+                    <td>@item.CeCreated</td>
+                    <td>@item.StartDate</td>
+                    <td>@item.EndDate</td>
+                    <td>@item.Project</td>
+                    <td>@item.QuoNumber</td>
+                    <td>@item.QuoTitle</td>
+                    <td>@item.ItemServiceCode</td>
+                    <td>@item.ItemService</td>
+                    <td>@item.Description</td>
+                    <td>@item.SubBrandCode</td>
+                    <td>@item.SubBrand</td>
+                    <td>@item.AgentCode</td>
+                    <td>@item.Agent</td>
+                    <td>@item.CustomerCode</td>
+                    <td>@item.Customer</td>
+                    <td>@item.DetailingSamplingDay</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.TotalQuantity</td>
+                    <td>@item.RateUnit</td>
+                    <td>@item.Price</td>
+                    <td>@item.SST</td>
+                    <td>@item.Total</td>
+                    <td>@item.TaxCode</td>
+                </tr>
+            }
+        </table>
+    }
+</body>
+</html>
